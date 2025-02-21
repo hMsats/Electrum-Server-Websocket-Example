@@ -41,7 +41,7 @@ socket.addEventListener("message", function(event) {
 });
 ```                                                    
 
-It will output: "Connection opened" and show up on the Fulcrum server side as:
+Running `node websocket.js` will output: "Connection opened" and show up on the Fulcrum server side as:
 
 ```
 ID       IP:PORT                Typ  UAgent       ProtocolVer  Subs  HdrSub?  ReqRcv  RespSent  RecvBytes  SentBytes  TxsSent  Notifs  ErrorCt  Elapsed
