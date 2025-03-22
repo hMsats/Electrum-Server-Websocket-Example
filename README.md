@@ -1,46 +1,19 @@
 # Electrum-Server-Websocket-Example
-Example of how to connect on Ubuntu Linux with nodejs to a public Bitcoin Electrum Server (Fulcrum) via Websockets (wss).
+Connect on Ubuntu Linux with nodejs to a public Bitcoin Electrum Server (Fulcrum) via Websockets (wss).
 
-// For the client:
-// sudo apt install nodejs
-// sudo apt install npm
-// npm i ws
-// Run on client as:
-// node websocket.js
+Install:
 
-// For the server:
-// sudo ufw allow 50003
-// sudo ufw allow 50004
-// On the modem:
-// open port 50003
-// open port 50004
+    sudo apt install nodejs
+    sudo apt install npm
+    npm i ws
 
-websocket.js:
+Run:
 
-```
-const WebSocket = require('ws');
-const socket = new WebSocket("wss://bitcoinserver.nl:50004");
-//const socket = new WebSocket("ws://bitcoinserver.nl:50003");
+    node websocket.js                       
 
-// Connection opened
-socket.addEventListener("open", () => {
-  console.log("Connection opened");
-});
+This will output: "Connection opened".
 
-socket.addEventListener("close", () => {
-  console.log("Connection closed");
-});
-
-socket.addEventListener("error", e => {
-  console.log("Error\n\n", e);
-});
-
-socket.addEventListener("message", function(event) {
-  console.log("Message from server ", event.data);
-});
-```                                                    
-
-Running `node websocket.js` will output: "Connection opened" and show up on the Fulcrum server side as:
+The connection will show up on the (Fulcrum) server side as:
 
 ```
 ID       IP:PORT                Typ  UAgent       ProtocolVer  Subs  HdrSub?  ReqRcv  RespSent  RecvBytes  SentBytes  TxsSent  Notifs  ErrorCt  Elapsed
