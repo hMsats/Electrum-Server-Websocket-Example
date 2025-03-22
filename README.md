@@ -1,5 +1,19 @@
 # Electrum-Server-Websocket-Example
-Connect on Ubuntu Linux with nodejs to a public Bitcoin Electrum Server (Fulcrum) via Websockets (wss).
+Connect to a public electrum server via websockets.
+
+&nbsp;
+
+Info:
+
+**Electrum server:** Fulcrum
+
+**Coin:** bitcoin
+
+**System:** Ubuntu linux
+
+**Application:** nodejs
+
+&nbsp;
 
 Install:
 
@@ -7,11 +21,15 @@ Install:
     sudo apt install npm
     npm i ws
 
+&nbsp;
+
 Run:
 
     node websocket.js                       
 
 If successful this will output: "Connection opened".
+
+&nbsp;
 
 The connection will show up on the (Fulcrum) server side as:
 
