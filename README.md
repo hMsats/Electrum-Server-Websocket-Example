@@ -1,21 +1,9 @@
 # Electrum-Server-Websocket-Example
-Connect to a public electrum server via websockets.
+Connect to an electrum server via websockets
 
 &nbsp;
 
-Info:
-
-**Electrum server:** Fulcrum
-
-**Coin:** bitcoin
-
-**System:** Ubuntu linux
-
-**Application:** nodejs
-
-&nbsp;
-
-Install:
+**Install**
 
     sudo apt install nodejs
     sudo apt install npm
@@ -23,15 +11,15 @@ Install:
 
 &nbsp;
 
-Run:
+**Run**
 
     node websocket.js                       
 
-If successful this will output: "Connection opened".
+and if successful this will output "Connection opened"
 
 &nbsp;
 
-The connection will show up on the server side as:
+The connection will show up on the server side (fulcrum) as:
 
 ```
 ID       IP:PORT                Typ  UAgent       ProtocolVer  Subs  HdrSub?  ReqRcv  RespSent  RecvBytes  SentBytes  TxsSent  Notifs  ErrorCt  Elapsed
