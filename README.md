@@ -31,7 +31,7 @@ If successful this will output: "Connection opened".
 
 &nbsp;
 
-The connection will show up on the (Fulcrum) server side as:
+The connection will show up on the server side as:
 
 ```
 ID       IP:PORT                Typ  UAgent       ProtocolVer  Subs  HdrSub?  ReqRcv  RespSent  RecvBytes  SentBytes  TxsSent  Notifs  ErrorCt  Elapsed
