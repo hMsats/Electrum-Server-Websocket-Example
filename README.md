@@ -1,10 +1,6 @@
 # Electrum-Server-Websocket-Example
 Example of how to connect on Ubuntu Linux with nodejs to a public Bitcoin Electrum Server (Fulcrum) via Websockets (wss).
 
-websocket.js:
-
-```
-
 // For the client:
 // sudo apt install nodejs
 // sudo apt install npm
@@ -19,6 +15,9 @@ websocket.js:
 // open port 50003
 // open port 50004
 
+websocket.js:
+
+```
 const WebSocket = require('ws');
 const socket = new WebSocket("wss://bitcoinserver.nl:50004");
 //const socket = new WebSocket("ws://bitcoinserver.nl:50003");
