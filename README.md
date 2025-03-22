@@ -11,7 +11,7 @@ Run:
 
     node websocket.js                       
 
-This will output: "Connection opened".
+If successful this will output: "Connection opened".
 
 The connection will show up on the (Fulcrum) server side as:
 
