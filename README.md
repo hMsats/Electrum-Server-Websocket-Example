@@ -19,7 +19,7 @@ and if successful this will output "Connection opened"
 
 &nbsp;
 
-The connection will show up on the server side (fulcrum) as:
+The connection will show up on the server side (Fulcrum) as:
 
 ```
 ID       IP:PORT                Typ  UAgent       ProtocolVer  Subs  HdrSub?  ReqRcv  RespSent  RecvBytes  SentBytes  TxsSent  Notifs  ErrorCt  Elapsed
